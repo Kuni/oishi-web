@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+%html
+  %head
+    %title Oishi
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => "css/reset.css", :media => "screen"}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => "css/960.css", :media => "screen"}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => "css/style.css", :media => "screen"}
+    %script{:type => 'text/javascript', :src => 'js/jQuery.js'}
+    %script{:type => 'text/javascript', :src => 'js/site.js'}
+  %body
+    #header
+      .container_12
+        .grid_2
+          = "&nbsp;"
+        .grid_4
+          %img{:src => "images/logo.png", :class => 'logo'}
+        .grid_6
+          = "Menu"
+        .clear
+    #content
+      .container_12
+        .grid_2
+          = "&nbsp;"
+        .grid_6
+          = yield
+        .grid_4
+          = "Sidebar"
+    #footer
