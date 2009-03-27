@@ -22,5 +22,8 @@ module Sinatra
 
   end
 
+  module Geokit
+  end
+
 
 end
