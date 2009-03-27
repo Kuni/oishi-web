@@ -23,6 +23,12 @@ module Sinatra
   end
 
   module Geokit
+    
+    def getLatitudeLongitude(address)
+      require "geokit" unless ::Geokit
+
+    end
+
   end
 
 
